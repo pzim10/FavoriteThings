@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FavViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,9 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:[FavViewController new]];
+    self.window.rootViewController = navController;
     return YES;
 }
 
