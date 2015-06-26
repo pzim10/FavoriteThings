@@ -8,7 +8,7 @@
 
 #import "FavViewController.h"
 
-@interface FavViewController ()
+@interface FavViewController () <UITableViewDataSource>
 
 @end
 
@@ -17,6 +17,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:tableView];
+    tableView.dataSource = self;
+    
+    // Register Cell to be Dequeued
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellID"];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Dequeue the Cell
+    
+//    UITableViewCell *cell = [UITableViewCell new];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+    
+    cell.textLabel.text = [self FavoriteThings][indexPath.row];
+    [tableView addSubview:cell];
+    return  cell;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self FavoriteThings].count;
+}
+
+-(NSArray *)FavoriteThings {
+    return @[@"Food", @"Sports", @"Sleep", @"Soccer", @"Family", @"Friends"];
 }
 
 - (void)didReceiveMemoryWarning {

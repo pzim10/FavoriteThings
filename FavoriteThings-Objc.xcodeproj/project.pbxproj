@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28B4CFAE1B3CE4BD00E632EB /* FavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B4CFAD1B3CE4BD00E632EB /* FavViewController.m */; };
 		71DE96EC19A8D5360021E6F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE96EB19A8D5360021E6F7 /* main.m */; };
 		71DE96EF19A8D5360021E6F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE96EE19A8D5360021E6F7 /* AppDelegate.m */; };
 		71DE96F119A8D5360021E6F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DE96F019A8D5360021E6F7 /* Images.xcassets */; };
@@ -24,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28B4CFAC1B3CE4BD00E632EB /* FavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavViewController.h; sourceTree = "<group>"; };
+		28B4CFAD1B3CE4BD00E632EB /* FavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavViewController.m; sourceTree = "<group>"; };
 		71DE96E619A8D5360021E6F7 /* FavoriteThings-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FavoriteThings-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DE96EA19A8D5360021E6F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71DE96EB19A8D5360021E6F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 			children = (
 				71DE96ED19A8D5360021E6F7 /* AppDelegate.h */,
 				71DE96EE19A8D5360021E6F7 /* AppDelegate.m */,
+				28B4CFAC1B3CE4BD00E632EB /* FavViewController.h */,
+				28B4CFAD1B3CE4BD00E632EB /* FavViewController.m */,
 				71DE96F019A8D5360021E6F7 /* Images.xcassets */,
 				71DE96E919A8D5360021E6F7 /* Supporting Files */,
 			);
@@ -207,6 +212,7 @@
 			files = (
 				71DE96EF19A8D5360021E6F7 /* AppDelegate.m in Sources */,
 				71DE96EC19A8D5360021E6F7 /* main.m in Sources */,
+				28B4CFAE1B3CE4BD00E632EB /* FavViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +386,7 @@
 				71DE970219A8D5360021E6F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71DE970319A8D5360021E6F7 /* Build configuration list for PBXNativeTarget "FavoriteThings-ObjcTests" */ = {
 			isa = XCConfigurationList;
@@ -388,6 +395,7 @@
 				71DE970519A8D5360021E6F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
